@@ -1,0 +1,94 @@
+:root {
+    --board-width: 10;
+    --board-height: 5;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    text-align: center;
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(var(--board-height), 1fr);
+    grid-template-rows: repeat(var(--board-width), 1fr);
+    gap: 0;
+    width: min-content;
+
+    box-shadow: #8888 10px 10px 10px 2px;
+}
+
+.cell {
+    
+    width: 32px;
+    height: 32px;
+    background: darkgray;
+}
+
+.cell:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.cell-marked {
+    background: orange;
+}
+
+.cell0 {
+    background: gray;
+}
+
+.cellX {
+    background: red;
+}
+
+.cell1 {
+    
+    transition: color 2s;
+    background: rgb(0,170,0);
+}
+
+.cell2 {
+    
+    background: rgb(0,150,0);
+}
+
+.cell3 {
+    
+    background: rgb(0,100,0);
+}
+
+.cell4 {
+    
+    background: rgb(0,70,0);
+}
+
+.cell5 {
+    
+    background: rgb(0,50,0);
+}
+
+.cell6 {
+    
+    background: rgb(0,50,0);
+}
+
+.cell7 {
+    
+    background: rgb(0,50,0);
+}
+
+.cell8 {
+    background: green;
+}
